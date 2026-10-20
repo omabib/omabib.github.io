@@ -139,14 +139,35 @@
           <article class="panel" role="tabpanel" id="panel-ask" aria-labelledby="tab-ask">
             <div class="frame">
               <div class="chat" aria-hidden="true">
-                <div class="page"><span class="head"></span><span style="width: 92%"></span><span style="width: 86%"></span><span style="width: 90%"></span><span style="width: 40%"></span><span class="hl" style="width: 88%; margin-top: 0.6em"></span><span class="hl" style="width: 74%"></span><span style="width: 91%; margin-top: 0.6em"></span><span style="width: 83%"></span><span style="width: 66%"></span></div>
+                <div class="page">
+                  <span class="head"></span>
+                  <span style="width: 90%"></span><span style="width: 84%"></span><span style="width: 52%"></span>
+                  <div class="figure">
+                    <svg class="plot" viewBox="0 0 220 150" aria-hidden="true">
+                      <g class="grid"><path d="M34 12v110M80 12v110M126 12v110M172 12v110M34 28h176M34 59h176M34 90h176"/></g>
+                      <path class="axis" d="M34 12v110h176"/>
+                      <path class="fit" d="M38 30 206 104"/>
+                      <g class="dots"><circle cx="44" cy="34" r="2.6"/><circle cx="58" cy="38" r="2.6"/><circle cx="71" cy="46" r="2.6"/><circle cx="86" cy="51" r="2.6"/><circle cx="100" cy="57" r="2.6"/><circle cx="114" cy="62" r="2.6"/><circle cx="129" cy="70" r="2.6"/><circle cx="143" cy="75" r="2.6"/><circle cx="158" cy="82" r="2.6"/><circle cx="172" cy="87" r="2.6"/><circle cx="187" cy="95" r="2.6"/><circle cx="200" cy="100" r="2.6"/></g>
+                      <text x="122" y="140">Parameters (log)</text>
+                      <text x="14" y="70" transform="rotate(-90 14 70)">Test loss (log)</text>
+                    </svg>
+                    <i class="corner tl"></i><i class="corner tr"></i><i class="corner bl"></i><i class="corner br"></i>
+                  </div>
+                  <span class="caption"></span>
+                  <span style="width: 88%"></span><span style="width: 76%"></span>
+                </div>
                 <div class="pane">
                   <div class="bar">Chat <span class="model">Claude Code · Opus</span></div>
                   <div class="thread">
-                    <div class="you">Save the selected passage as a note in my Thesis project, with its page.</div>
-                    <div class="agent">I read the passage on <b>p. 4</b> and drafted the note. Saving it changes your library, so it needs your OK.</div>
-                    <div class="ask"><span><b>Add a note</b><small>Thesis · evidence p. 4</small></span><span class="buttons"><span>Allow once</span><span>Deny</span></span></div>
+                    <div class="you"><span class="clip">Figure 1 · p. 3</span>Why is this a straight line, and what is α?</div>
+                    <div class="agent">
+                      <p>Both axes are logarithmic, and loss follows a power law in the parameter count, eq. 1.1 on <b>p. 4</b>:</p>
+                      <div class="math"><i>L</i>(<i>N</i>) = <span class="paren">(</span><span class="frac"><span><i>N</i><sub>c</sub></span><span><i>N</i></span></span><span class="paren">)</span><sup><i>α</i><sub><i>N</i></sub></sup></div>
+                      <p>Taking logs gives a line with slope −<i>α</i><sub><i>N</i></sub>&nbsp;≈ −0.076. Doubling <i>N</i> lowers the loss by about 5%, the same step anywhere along the line.</p>
+                    </div>
+                    <div class="actions"><span>Copy</span><span>Save as note</span></div>
                   </div>
+                  <div class="composer">Ask about this paper…<span>↵</span></div>
                 </div>
               </div>
             </div>
