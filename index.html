@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Omabib · Reference manager and PDF reader for Linux and macOS</title>
+<meta name="description" content="Omabib is a fast, free reference manager and PDF reader for Linux and macOS. Organize your literature, read and annotate PDFs, and bring your own AI agent through a built-in MCP server.">
+<link rel="canonical" href="https://omabib.github.io/">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Omabib">
+<meta property="og:url" content="https://omabib.github.io/">
+<meta property="og:title" content="Omabib · Reference manager and PDF reader for Linux and macOS">
+<meta property="og:description" content="A fast, free reference manager and PDF reader. Organize your literature, read and annotate PDFs, and bring your own AI agent through a built-in MCP server.">
+<meta property="og:image" content="https://omabib.github.io/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/MonaSans-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="preload" href="fonts/SourceSerif4-Semibold.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Omabib",
+  "description": "A fast reference manager and PDF reader for Linux and macOS, with a built-in MCP server for AI agents.",
+  "applicationCategory": "ProductivityApplication",
+  "operatingSystem": "Linux, macOS",
+  "url": "https://omabib.github.io/",
+  "downloadUrl": "https://github.com/atomashevic/omabib/releases/latest",
+  "license": "https://www.gnu.org/licenses/agpl-3.0.html",
+  "isAccessibleForFree": true,
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+  "image": "https://omabib.github.io/og.png"
+}
+</script>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent-fill)"/><path d="M23 15h-7v34h7M41 15h7v34h-7" fill="none" stroke="var(--on-accent)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="5.5" fill="var(--on-accent)"/></svg>
+      Omabib
+    </a>
+    <nav class="nav" aria-label="Site">
+      <a href="./" aria-current="page">Overview</a>
+      <a class="hide-phone" href="https://github.com/atomashevic/omabib/blob/main/docs/guide.md">User guide</a>
+      <a href="privacy.html">Privacy</a>
+    </nav>
+    <a class="gh" href="https://github.com/atomashevic/omabib">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .2a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 .2z"/></svg>
+      <span class="hide-phone">GitHub</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <section class="wrap hero" aria-labelledby="hero-title">
+    <h1 id="hero-title">The reference manager you share with your agent</h1>
+    <p class="lede">Omabib is a fast reference manager and PDF reader for Linux and macOS. Read, annotate and organize your literature with your own agent working alongside you: it reads the paper you have open, answers with page references, and saves notes when you ask. A fast MCP server is built in, so Claude Code, Codex or any other MCP client can use your library too.</p>
+    <div class="install" id="install">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 5 3 3-3 3M8.5 11.5h4"/></svg>
+      <code id="command">curl -fsSL https://github.com/atomashevic/omabib/releases/latest/download/get.sh | sh</code>
+      <button class="copy" type="button" data-copy="command">
+        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 5.5h7v7h-7zM3.5 10.5v-7h7"/></svg><span>Copy</span>
+      </button>
+    </div>
+  </section>
+
+  <div class="wrap shot">
+    <div class="window">
+      <picture>
+        <source srcset="img/library-dark.webp" media="(prefers-color-scheme: dark)">
+        <img src="img/library-light.webp" width="2640" height="1680" alt="Omabib's library: projects in the sidebar, a list of papers, and Attention Is All You Need open in the detail pane with its abstract, citation key and a note.">
+      </picture>
+    </div>
+  </div>
+
+  <section class="band" aria-labelledby="features-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="features-title">What it does</h2>
+        <p>Pick one to see it in the app.</p>
+      </div>
+      <div class="features">
+        <ul class="feature-list" role="tablist" aria-label="Features" aria-orientation="vertical">
+          <li><button type="button" role="tab" id="tab-search" aria-controls="panel-search" aria-selected="false" tabindex="-1">
+            <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M7 12a5 5 0 1 0 0-10 5 5 0 0 0 0 10zM10.75 10.75 14 14"/></svg></span>
+            <span class="words"><span class="title">Fast search as you type</span><span class="meta">Titles, authors, citation keys, abstracts and your notes</span></span>
+            <kbd><span class="mod">Ctrl+</span>F</kbd>
+          </button></li>
+          <li><button type="button" role="tab" id="tab-ask" aria-controls="panel-ask" aria-selected="true">
+            <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round" aria-hidden="true"><path d="M8 2.5 9.2 6.8 13.5 8 9.2 9.2 8 13.5 6.8 9.2 2.5 8 6.8 6.8z"/></svg></span>
+            <span class="words"><span class="title">Bring your own agent</span><span class="meta">Claude Code or Codex, on your own login. No API keys</span></span>
+            <kbd>c</kbd>
+          </button></li>
+          <li><button type="button" role="tab" id="tab-agents" aria-controls="panel-agents" aria-selected="false" tabindex="-1">
+            <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 3.5h11v9h-11zM5 6.5l2 1.75-2 1.75M8.5 10.5h2.5"/></svg></span>
+            <span class="words"><span class="title">First-class MCP, built in</span><span class="meta">One fast server for Claude Code, Codex, Claude Desktop and any MCP client</span></span>
+          </button></li>
+          <li><button type="button" role="tab" id="tab-read" aria-controls="panel-read" aria-selected="false" tabindex="-1">
+            <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 1.75h5.25L12.5 5v9.25H4zM9 1.75V5.25h3.5M6 8.25h4.5M6 10.75h4.5"/></svg></span>
+            <span class="words"><span class="title">Read PDFs in tabs</span><span class="meta">Notes, abstract and AI summary beside the page</span></span>
+            <kbd>Enter</kbd>
+          </button></li>
+          <li><button type="button" role="tab" id="tab-clip" aria-controls="panel-clip" aria-selected="false" tabindex="-1">
+            <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4.5 1.5v10h10M1.5 4.5h10v10"/></svg></span>
+            <span class="words"><span class="title">Clip a figure into a note</span><span class="meta">Tables, figures and equations, with their page</span></span>
+            <kbd>r</kbd>
+          </button></li>
+          <li><button type="button" role="tab" id="tab-sync" aria-controls="panel-sync" aria-selected="false" tabindex="-1">
+            <span class="icon"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.25a3 3 0 0 1-.4-5.97 4 4 0 0 1 7.8.47 2.75 2.75 0 0 1-.4 5.5M8 13.25v-5.5M6 9.75l2-2 2 2"/></svg></span>
+            <span class="words"><span class="title">Sync through your own storage</span><span class="meta">Google Drive, Dropbox, OneDrive or a synced folder</span></span>
+          </button></li>
+        </ul>
+
+        <div>
+          <article class="panel" role="tabpanel" id="panel-search" aria-labelledby="tab-search" hidden>
+            <div class="frame" style="--w: 118.95"><picture><source srcset="img/search-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/search-light.webp" alt="Searching a thesis project for attention: four matching papers, the second selected." loading="lazy"></picture></div>
+            <h3>Fast search as you type</h3>
+            <p>Results follow every keystroke, even in a large library. Small typos are forgiven, and inside a project your notes for it come first.</p>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-ask" aria-labelledby="tab-ask">
+            <div class="frame">
+              <div class="chat" aria-hidden="true">
+                <div class="page"><span class="head"></span><span style="width: 92%"></span><span style="width: 86%"></span><span style="width: 90%"></span><span style="width: 40%"></span><span class="hl" style="width: 88%; margin-top: 0.6em"></span><span class="hl" style="width: 74%"></span><span style="width: 91%; margin-top: 0.6em"></span><span style="width: 83%"></span><span style="width: 66%"></span></div>
+                <div class="pane">
+                  <div class="bar">Chat <span class="model">Claude Code · Opus</span></div>
+                  <div class="thread">
+                    <div class="you">Save the selected passage as a note in my Thesis project, with its page.</div>
+                    <div class="agent">I read the passage on <b>p. 4</b> and drafted the note. Saving it changes your library, so it needs your OK.</div>
+                    <div class="ask"><span><b>Add a note</b><small>Thesis · evidence p. 4</small></span><span class="buttons"><span>Allow once</span><span>Deny</span></span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <h3>Bring your own agent</h3>
+            <p>Ask about the paper in front of you. The agent reads the paper, your notes and the PDF, cites pages you can click, and asks before it changes anything. It runs on the plan you already have; Omabib adds no subscription.</p>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-agents" aria-labelledby="tab-agents" hidden>
+            <div class="frame" style="--w: 153.49; --x: -38.08; --y: -17.15"><picture><source srcset="img/agents-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/agents-light.webp" alt="Setting up agents: Claude Code and Codex found, with Claude Code, Codex sessions and Claude Desktop allowed to use the library." loading="lazy"></picture></div>
+            <h3>First-class MCP, built in</h3>
+            <p>Omabib ships its own MCP server, with nothing extra to install. Agents search your library, fetch many papers in one call, read notes and figure clips, and open PDFs, fast enough to keep up with a long research session. Notes are saved only when you ask.</p>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-read" aria-labelledby="tab-read" hidden>
+            <div class="frame" style="--w: 102.65"><picture><source srcset="img/reader-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/reader-light.webp" alt="Attention Is All You Need open in a reader tab, with notes and a clipped figure in the side pane." loading="lazy"></picture></div>
+            <h3>Read PDFs in tabs</h3>
+            <p>Enter opens the paper in a tab and remembers your page. Scroll, zoom with the wheel, find with /, and switch the page to your theme’s colors for night reading.</p>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-clip" aria-labelledby="tab-clip" hidden>
+            <div class="frame" style="--w: 182.27; --x: -81.40; --y: -5.23"><picture><source srcset="img/reader-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/reader-light.webp" alt="The notes pane beside a paper, with a clipped figure saved as a note on page 4." loading="lazy"></picture></div>
+            <h3>Clip a figure into a note</h3>
+            <p>Press r and drag over a figure, table or equation. It lands in a note with its page, sharp at any zoom, ready for you and your agent.</p>
+          </article>
+          <article class="panel" role="tabpanel" id="panel-sync" aria-labelledby="tab-sync" hidden>
+            <div class="frame" style="--w: 153.49; --x: -38.08; --y: -17.15"><picture><source srcset="img/sync-dark.webp" media="(prefers-color-scheme: dark)"><img src="img/sync-light.webp" alt="Choosing where to sync, with a library found in Dropbox, ready to use." loading="lazy"></picture></div>
+            <h3>Sync through your own storage</h3>
+            <p>The same library on your laptop and desktop. Edits merge, PDFs come along, and the files stay readable in your own storage.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap keys" aria-labelledby="keys-title">
+    <div class="section-head">
+      <h2 id="keys-title">Everything is a keystroke away</h2>
+      <p>And a button too, for the mouse. <span id="keys-note">On a Mac, ⌘ takes the place of Ctrl.</span></p>
+    </div>
+    <ul class="key-grid">
+      <li><kbd><span class="mod">Ctrl+</span>K</kbd>Every action</li>
+      <li><kbd><span class="mod">Ctrl+</span>F</kbd>Search</li>
+      <li><kbd>Enter</kbd>Open the PDF</li>
+      <li><kbd>Tab</kbd>Paper details</li>
+      <li><kbd><span class="mod">Ctrl+</span>T</kbd>Open in a tab</li>
+      <li><kbd>/</kbd>Find in a PDF</li>
+      <li><kbd>r</kbd>Clip a figure</li>
+      <li><kbd>c</kbd>Ask about a passage</li>
+    </ul>
+  </section>
+
+  <section class="wrap yours" aria-labelledby="yours-title">
+    <div class="card">
+      <div>
+        <h2 id="yours-title">Your library stays yours</h2>
+        <p>Omabib runs on your computer and keeps your library there. Sync goes straight to storage you already have. Omabib is free software under the AGPL.</p>
+        <a class="more" href="privacy.html">Read the privacy policy →</a>
+      </div>
+      <ul class="checks">
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--on-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span>Free and open source<span class="hint">AGPL, no subscription</span></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--on-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span>No servers<span class="hint">nothing to sign up for</span></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--on-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span>No analytics<span class="hint">nothing is tracked</span></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--on-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span>Your storage<span class="hint">sync goes straight there</span></li>
+        <li><span class="dot"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--on-accent)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg></span>No lock-in<span class="hint">BibTeX in and out</span></li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Omabib · free software under the AGPL</span>
+    <nav aria-label="More">
+      <a href="https://github.com/atomashevic/omabib">GitHub</a>
+      <a href="https://github.com/atomashevic/omabib/blob/main/docs/guide.md">User guide</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://github.com/sponsors/atomashevic">Sponsor</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>

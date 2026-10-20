@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://omabib.github.io/sitemap.xml

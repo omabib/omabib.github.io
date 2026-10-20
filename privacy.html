@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy · Omabib</title>
+<meta name="description" content="How Omabib handles your data: it runs on your computer, has no servers, no accounts and no analytics, and syncs only to storage you choose.">
+<link rel="canonical" href="https://omabib.github.io/privacy.html">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0f1115" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Omabib">
+<meta property="og:url" content="https://omabib.github.io/privacy.html">
+<meta property="og:title" content="Privacy · Omabib">
+<meta property="og:description" content="Omabib runs on your computer. No servers, no accounts, no analytics.">
+<meta property="og:image" content="https://omabib.github.io/og.png">
+<link rel="preload" href="fonts/SourceSerif4-Regular.ttf" as="font" type="font/ttf" crossorigin>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="./">
+      <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="var(--accent-fill)"/><path d="M23 15h-7v34h7M41 15h7v34h-7" fill="none" stroke="var(--on-accent)" stroke-width="6.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="32" cy="32" r="5.5" fill="var(--on-accent)"/></svg>
+      Omabib
+    </a>
+    <nav class="nav" aria-label="Site">
+      <a href="./">Overview</a>
+      <a class="hide-phone" href="https://github.com/atomashevic/omabib/blob/main/docs/guide.md">User guide</a>
+      <a href="privacy.html" aria-current="page">Privacy</a>
+    </nav>
+    <a class="gh" href="https://github.com/atomashevic/omabib">
+      <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true"><path d="M8 .2a8 8 0 0 0-2.53 15.59c.4.07.55-.17.55-.38v-1.33c-2.23.48-2.7-1.07-2.7-1.07-.36-.92-.89-1.17-.89-1.17-.73-.5.05-.49.05-.49.8.06 1.23.83 1.23.83.72 1.22 1.88.87 2.34.66.07-.52.28-.87.5-1.07-1.78-.2-3.65-.89-3.65-3.95 0-.87.31-1.59.83-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82a7.6 7.6 0 0 1 4 0c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.28.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48v2.2c0 .21.15.46.55.38A8 8 0 0 0 8 .2z"/></svg>
+      <span class="hide-phone">GitHub</span>
+    </a>
+  </div>
+</header>
+
+<main class="wrap doc-grid">
+  <nav class="toc" aria-label="On this page">
+    <span class="label">On this page</span>
+    <a href="#library" class="active"><b>1</b>Your library stays on your computer</a>
+    <a href="#sync"><b>2</b>Sync uses your own storage</a>
+    <a href="#lookups"><b>3</b>Looking up papers</a>
+    <a href="#ai"><b>4</b>AI chat</a>
+    <a href="#install"><b>5</b>Installing and updating</a>
+    <a href="#revoke"><b>6</b>Removing access</a>
+    <a href="#contact"><b>7</b>Changes and contact</a>
+  </nav>
+
+  <article class="doc">
+    <header>
+      <h1>Privacy</h1>
+      <p class="lede">Omabib is a reference manager that runs on your computer. It has no servers, no accounts and no analytics. We don't receive your data, so we can't sell, share or lose it.</p>
+      <div class="chips">
+        <span class="chip"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>No servers</span>
+        <span class="chip"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>No accounts</span>
+        <span class="chip"><svg width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="var(--success)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 8.5 3 3 6-7"/></svg>No analytics</span>
+        <span class="date">Effective October 20, 2026</span>
+      </div>
+    </header>
+
+    <section id="library" aria-labelledby="h-library">
+      <h2 id="h-library"><b>1</b>Your library stays on your computer</h2>
+      <p>References, notes, clips, chats and the PDFs Omabib downloads are stored in a folder on your computer, <code>~/.local/share/omabib</code>. Omabib never sends them to us.</p>
+    </section>
+
+    <section id="sync" aria-labelledby="h-sync">
+      <h2 id="h-sync"><b>2</b>Sync uses your own storage</h2>
+      <p>Sync is optional. When you turn it on, Omabib copies your references, notes and PDFs from your computer straight to storage you choose, using <a href="https://rclone.org">rclone</a> on your computer. Nothing passes through us, and the sign-in tokens stay on your computer.</p>
+      <ul class="rows">
+        <li class="provider">
+          <span class="icon"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 9.5 4.5 3.5h7l2 6v3a1 1 0 0 1-1 1h-9a1 1 0 0 1-1-1zM2.5 9.5h11M11 11.5h.01"/></svg></span>
+          <span class="what"><span class="name">Google Drive <span class="scope">drive.file</span></span><span class="text">Omabib can see and change only the files and folders it creates, in My Drive → Omabib. Nothing else in your Drive.</span></span>
+        </li>
+        <li class="provider">
+          <span class="icon"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2.5 5 8 2.25 13.5 5v6L8 13.75 2.5 11zM2.5 5 8 7.75 13.5 5M8 7.75v6"/></svg></span>
+          <span class="what"><span class="name">Dropbox <span class="scope">App folder</span></span><span class="text">Omabib sees only its own folder, Dropbox → Apps → Omabib.</span></span>
+        </li>
+        <li class="provider">
+          <span class="icon"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4.5 12.5a3 3 0 0 1-.4-5.97 4 4 0 0 1 7.8.47 2.75 2.75 0 0 1-.4 5.5z"/></svg></span>
+          <span class="what"><span class="name">OneDrive <span class="scope">via rclone</span></span><span class="text">Sign-in goes through rclone’s Microsoft app, which asks for access to your OneDrive files. Omabib reads and writes only OneDrive → Omabib.</span></span>
+        </li>
+        <li class="provider">
+          <span class="icon"><svg width="17" height="17" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4.25C2 3.55 2.55 3 3.25 3h3l1.5 1.75h5c.7 0 1.25.55 1.25 1.25v6.25c0 .7-.55 1.25-1.25 1.25h-9.5C2.55 13.5 2 12.95 2 12.25z"/></svg></span>
+          <span class="what"><span class="name">A synced folder or other storage <span class="scope">your choice</span></span><span class="text">Omabib writes to the folder or remote you pick, and that tool’s own terms apply.</span></span>
+        </li>
+      </ul>
+      <div class="callout">
+        <svg width="18" height="18" viewBox="0 0 16 16" fill="none" stroke="var(--accent-text)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 1.75 13 3.5v4c0 3.1-2.1 5.6-5 6.75-2.9-1.15-5-3.65-5-6.75v-4z"/><path d="m5.75 8 1.6 1.6 2.9-3.2"/></svg>
+        <p>Omabib's use and transfer of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Data from Google Drive is used only to sync your Omabib library between your own computers. It is not used for advertising, not used to train AI models, and not read by people.</p>
+      </div>
+    </section>
+
+    <section id="lookups" aria-labelledby="h-lookups">
+      <h2 id="h-lookups"><b>3</b>Looking up papers</h2>
+      <p>When you add a paper or ask for its details, Omabib sends the paper's identifier or title to public scholarly services. When it fetches an open-access PDF, it downloads it from the publisher or repository that hosts it. Those services see an ordinary request from your computer, and their own privacy policies apply.</p>
+      <ul class="services">
+        <li>Crossref</li><li>DataCite</li><li>doi.org</li><li>OpenAlex</li><li>Semantic Scholar</li><li>Europe PMC</li><li>arXiv</li><li>alphaXiv</li>
+      </ul>
+    </section>
+
+    <section id="ai" aria-labelledby="h-ai">
+      <h2 id="h-ai"><b>4</b>AI chat</h2>
+      <p>Chat runs Claude Code or Codex on your computer, under your own Anthropic or OpenAI account, with the paper you chose. What those tools send is governed by your agreement with that company. Omabib sends nothing to them itself and has no access to your account.</p>
+    </section>
+
+    <section id="install" aria-labelledby="h-install">
+      <h2 id="h-install"><b>5</b>Installing and updating</h2>
+      <p>The installer downloads Omabib from GitHub, and Omabib can download rclone from rclone.org. Those sites see the download request.</p>
+    </section>
+
+    <section id="revoke" aria-labelledby="h-revoke">
+      <h2 id="h-revoke"><b>6</b>Removing access</h2>
+      <p>Choose <strong>Stop syncing this computer</strong> in Omabib's Sync dialog, then remove Omabib or rclone where you signed in. Deleting <code>~/.local/share/omabib</code> removes your library from your computer.</p>
+      <ul class="rows">
+        <li><a href="https://myaccount.google.com/connections"><span>Google account</span><small class="hide-phone">Third-party connections</small><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 7.5 8.5M11.5 9.5v4h-9v-9h4"/></svg></a></li>
+        <li><a href="https://www.dropbox.com/account/connected_apps"><span>Dropbox</span><small class="hide-phone">Connected apps</small><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 7.5 8.5M11.5 9.5v4h-9v-9h4"/></svg></a></li>
+        <li><a href="https://account.live.com/consent/Manage"><span>Microsoft account</span><small class="hide-phone">App permissions</small><svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.5 2.5h4v4M13.5 2.5 7.5 8.5M11.5 9.5v4h-9v-9h4"/></svg></a></li>
+      </ul>
+    </section>
+
+    <section id="contact" aria-labelledby="h-contact">
+      <h2 id="h-contact"><b>7</b>Changes and contact</h2>
+      <p>If this policy changes, the new version will be posted here with a new date. Questions: <a href="mailto:atomashevic@gmail.com">atomashevic@gmail.com</a>, or <a href="https://github.com/atomashevic/omabib/issues">open an issue</a>.</p>
+    </section>
+  </article>
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <span>Omabib · free software under the AGPL</span>
+    <nav aria-label="More">
+      <a href="https://github.com/atomashevic/omabib">GitHub</a>
+      <a href="https://github.com/atomashevic/omabib/blob/main/docs/guide.md">User guide</a>
+      <a href="./">Overview</a>
+      <a href="https://github.com/sponsors/atomashevic">Sponsor</a>
+    </nav>
+  </div>
+</footer>
+<script src="site.js"></script>
+</body>
+</html>
