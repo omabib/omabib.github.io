@@ -65,13 +65,27 @@
       <span>Omabib</span>
     </div>
     <h1 id="hero-title">The reference manager you share with your agent</h1>
-    <p class="lede">Omabib is a fast reference manager and PDF reader for Linux and macOS. Read, annotate and organize your literature with your own agent working alongside you: it reads the paper you have open, answers with page references, and saves notes when you ask. A fast MCP server is built in, so Claude Code, Codex or any other MCP client can use your library too.</p>
-    <div class="install" id="install">
-      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 5 3 3-3 3M8.5 11.5h4"/></svg>
-      <code id="command">curl -fsSL https://github.com/atomashevic/omabib/releases/latest/download/get.sh | sh</code>
-      <button class="copy" type="button" data-copy="command">
-        <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 5.5h7v7h-7zM3.5 10.5v-7h7"/></svg><span>Copy</span>
-      </button>
+    <div class="intro">
+      <p class="lead">A fast reference manager and PDF reader for Linux and macOS.</p>
+      <p class="lede">Read, annotate and organize your literature with your own agent working alongside you. It reads the paper you have open, answers with page references, and saves notes when you ask. A built-in MCP server lets Claude Code, Codex or any other MCP client use your library too.</p>
+    </div>
+    <div class="get" id="install">
+      <div class="get-head">
+        <h2>Install on Linux or macOS</h2>
+        <span>One command, both systems</span>
+      </div>
+      <div class="install">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="var(--muted)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3.5 5 3 3-3 3M8.5 11.5h4"/></svg>
+        <code id="command">curl -fsSL https://github.com/atomashevic/omabib/releases/latest/download/get.sh | sh</code>
+        <button class="copy" type="button" data-copy="command">
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.5 5.5h7v7h-7zM3.5 10.5v-7h7"/></svg><span>Copy</span>
+        </button>
+      </div>
+      <ul class="get-notes">
+        <li>Paste it into a terminal, then open Omabib from your apps.</li>
+        <li>Installs into your home folder: no admin password, nothing to build.</li>
+        <li>Ubuntu 22.04+, Debian 12, Fedora, Arch and others on x86-64 · macOS 13+ on Apple silicon.</li>
+      </ul>
     </div>
   </section>
 
